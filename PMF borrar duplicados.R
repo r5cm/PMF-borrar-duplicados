@@ -7,8 +7,8 @@
 
 
 library(RForcecom)
-username <- "admin@andes.org"
-password <- "gfadm913XQWRiDpPU6NzJC9Cmm185FF2"
+username <- readline(prompt = "Enter username: ")
+password <- readline(prompt = "Enter password: ")
 instanceURL <- "https://taroworks-8629.cloudforce.com/"
 apiVersion <- "36.0"
 session <- rforcecom.login(username, password, instanceURL, apiVersion)
